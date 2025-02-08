@@ -1,0 +1,111 @@
+.container {
+  display: block;
+  margin-bottom: 80px;
+  padding-top: 40px;
+  .wrapper {
+    width: 1300px;
+    margin: auto;
+    .divide {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .image {
+        display: block;
+        width: 48%;
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+        width: 48%;
+        display: block;
+        text-align: center;
+        h2 {
+          font-size: 50px;
+          font-weight: 500;
+          line-height: 60px;
+          margin: 0;
+          padding: 0;
+        }
+        p {
+          font-size: 17px;
+          color: #444;
+          font-weight: 500;
+          width: 70%;
+          margin: auto;
+          padding: 25px 0px;
+        }
+        a {
+          text-decoration: none;
+          font-size: 21px;
+          color: #fff;
+          font-weight: 600;
+          background: #0678b1;
+          padding: 8px 30px;
+          margin-top: 15px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .container {
+    display: block;
+    margin-bottom: 50px;
+    .wrapper {
+      width: 100%;
+      .divide {
+        flex-wrap: wrap;
+        padding: 0px 5px;
+        .image {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .content {
+          width: 100%;
+          h2 {
+            font-size: 45px;
+          }
+          p {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .container {
+    display: block;
+    margin-bottom: 50px;
+    .wrapper {
+      width: 100%;
+      padding: 0px 5px;
+      .divide {
+        .content {
+          h2 {
+            font-size: 40px;
+            line-height: 50px;
+          }
+          p {
+            width: 100%;
+            padding: 10px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1299px) and (min-width: 993px) {
+  .container {
+    display: block;
+    margin-bottom: 50px;
+    .wrapper {
+      width: 100%;
+    }
+  }
+}

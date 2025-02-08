@@ -1,0 +1,36 @@
+.titleContent {
+  display: block;
+  margin-bottom: 80px;
+  .contentData {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    h2 {
+      font-size: 25px;
+      color: #000;
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      font-size: 16px;
+      color: #444;
+      font-weight: 400;
+      line-height: 27px;
+      margin: 0;
+      padding: 10px 0px;
+    }
+    ul {
+      margin: 0;
+      padding: 0px 20px;
+      list-style: disc;
+      display: block;
+      li {
+        padding: 5px 0px;
+        font-size: 16px;
+        color: #444;
+        font-weight: 400;
+      }
+    }
+  }
+}

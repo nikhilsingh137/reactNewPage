@@ -1,0 +1,324 @@
+.container {
+  display: block;
+  .title {
+    display: block;
+    width: 100%;
+    h2 {
+      font-size: 20px;
+      color: #566985;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .mainbox {
+    display: block;
+    margin-top: 25px;
+    form {
+      display: block;
+      .listingItemForm {
+        display: block;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.03);
+        padding: 20px 20px 40px 20px;
+        border-radius: 8px;
+        border: solid 1px #ddd;
+        .box {
+          display: block;
+          width: 100%;
+          margin-bottom: 15px;
+          label {
+            width: 100%;
+            display: block;
+            font-size: 13px;
+            color: #444;
+            font-weight: 500;
+            padding: 5px 0px;
+          }
+          input {
+            width: 100%;
+            height: 45px;
+            border: solid 1px #ddd;
+            font-size: 15px;
+            color: #444;
+            font-weight: 400;
+            border-radius: 4px;
+            outline: none;
+            padding-inline-start: 10px;
+            box-sizing: border-box;
+            background: #f9f9f9;
+            transition: 0.6s;
+            &:focus {
+              background: #fff;
+              box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.03);
+            }
+          }
+          span {
+            font-size: 14px;
+            color: #ff0000;
+            font-weight: 400;
+          }
+        }
+        .divide {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .detail {
+            width: 48%;
+            display: block;
+            label {
+              width: 100%;
+              display: block;
+              font-size: 12px;
+              color: #444;
+              font-weight: 500;
+              padding: 5px 0px;
+            }
+            select {
+              width: 100%;
+              height: 45px;
+              border: solid 1px #ddd;
+              font-size: 15px;
+              color: #444;
+              font-weight: 400;
+              border-radius: 4px;
+              outline: none;
+              padding-inline-start: 10px;
+              box-sizing: border-box;
+              background: #f9f9f9;
+              transition: 0.6s;
+              &:focus {
+                background: #fff;
+                box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.03);
+              }
+            }
+            span {
+              font-size: 14px;
+              color: #ff0000;
+              font-weight: 400;
+            }
+          }
+        }
+        .keyword {
+          display: block;
+          width: 48%;
+          label {
+            width: 100%;
+            display: block;
+            font-size: 13px;
+            color: #444;
+            font-weight: 500;
+            padding: 5px 0px;
+          }
+          input {
+            width: 100%;
+            height: 45px;
+            border: solid 1px #ddd;
+            font-size: 15px;
+            color: #444;
+            font-weight: 400;
+            border-radius: 4px;
+            outline: none;
+            padding-inline-start: 10px;
+            box-sizing: border-box;
+            background: #f9f9f9;
+            transition: 0.6s;
+            &:focus {
+              background: #fff;
+              box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.03);
+            }
+          }
+          span {
+            font-size: 14px;
+            color: #ff0000;
+            font-weight: 400;
+          }
+        }
+      }
+      .ItemLLocation {
+        display: block;
+        margin-top: 25px;
+        .title {
+          display: block;
+          h2 {
+            font-size: 20px;
+            color: #566985;
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+          }
+        }
+        .ItemLocationData {
+          display: block;
+          width: 100%;
+          background: #fff;
+          box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.03);
+          padding: 20px 20px 40px 20px;
+          border-radius: 8px;
+          border: solid 1px #ddd;
+          margin-top: 25px;
+          .seprate {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            .longitude {
+              display: block;
+              width: 48%;
+              label {
+                width: 100%;
+                display: block;
+                font-size: 13px;
+                color: #444;
+                font-weight: 500;
+                padding: 5px 0px;
+              }
+              input {
+                width: 100%;
+                height: 45px;
+                border: solid 1px #ddd;
+                font-size: 15px;
+                color: #444;
+                font-weight: 400;
+                border-radius: 4px;
+                outline: none;
+                padding-inline-start: 10px;
+                box-sizing: border-box;
+                background: #f9f9f9;
+                transition: 0.6s;
+                &:focus {
+                  background: #fff;
+                  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.03);
+                }
+              }
+              span {
+                font-size: 14px;
+                color: #ff0000;
+                font-weight: 400;
+              }
+            }
+          }
+          .City {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            label {
+              width: 100%;
+              display: block;
+              font-size: 13px;
+              color: #444;
+              font-weight: 500;
+              padding: 5px 0px;
+            }
+            select {
+              width: 100%;
+              height: 45px;
+              border: solid 1px #ddd;
+              font-size: 15px;
+              color: #444;
+              font-weight: 400;
+              border-radius: 4px;
+              outline: none;
+              padding-inline-start: 10px;
+              box-sizing: border-box;
+              background: #f9f9f9;
+              transition: 0.6s;
+              &:focus {
+                background: #fff;
+                box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.03);
+              }
+            }
+            span {
+              font-size: 14px;
+              color: #ff0000;
+              font-weight: 400;
+            }
+          }
+          .divideAddress {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            .address {
+              display: block;
+              width: 48%;
+              label {
+                width: 100%;
+                display: block;
+                font-size: 13px;
+                color: #444;
+                font-weight: 500;
+                padding: 5px 0px;
+              }
+              input {
+                width: 100%;
+                height: 45px;
+                border: solid 1px #ddd;
+                font-size: 15px;
+                color: #444;
+                font-weight: 400;
+                border-radius: 4px;
+                outline: none;
+                padding-inline-start: 10px;
+                box-sizing: border-box;
+                background: #f9f9f9;
+                transition: 0.6s;
+                &:focus {
+                  background: #fff;
+                  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.03);
+                }
+              }
+              span {
+                font-size: 14px;
+                color: #ff0000;
+                font-weight: 400;
+              }
+            }
+          }
+          .ItemLocationPhone {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            .phone {
+              display: block;
+              width: 48%;
+              label {
+                width: 100%;
+                display: block;
+                font-size: 13px;
+                color: #444;
+                font-weight: 500;
+                padding: 5px 0px;
+              }
+              input {
+                width: 100%;
+                height: 45px;
+                border: solid 1px #ddd;
+                font-size: 15px;
+                color: #444;
+                font-weight: 400;
+                border-radius: 4px;
+                outline: none;
+                padding-inline-start: 10px;
+                box-sizing: border-box;
+                background: #f9f9f9;
+                transition: 0.6s;
+                &:focus {
+                  background: #fff;
+                  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.03);
+                }
+              }
+              span {
+                font-size: 14px;
+                color: #ff0000;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
