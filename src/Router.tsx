@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import HomePage from "./page/HomePage";
 import AboutPage from "./page/AboutPage";
 import Register from "./Form/Register";
@@ -8,7 +8,7 @@ import MapLocation from "./component/MapLocation";
 import DashRoute from "./Dashboard/DashRoute";
 import Sitemap from "./component/SiteMap";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: (
