@@ -5,10 +5,6 @@ import router from "../Router";
 import Footer from "../common-component/Footer";
 
 const App = () => {
-  const location = window.location.pathname === "/login";
-  const location1 = window.location.pathname === "/register";
-  const location2 = window.location.pathname === "/";
-
   return (
     <>
       <Header />
