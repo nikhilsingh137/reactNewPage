@@ -27,15 +27,23 @@ const ProductListingData = ({ itemList }: any) => {
                       <img src={item.imageUrl} alt="" />
                     </span>
                     <div className={Style.productImageContent}>
-                      <h2>{item.rating}</h2>
-                      <div className={Style.RatingDetail}>
-                        <div className={Style.rating}>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                      <div className={Style.ProductImageIcon}>
+                        <i className="fa-regular fa-heart"></i>
+                        <h2>
+                          <i className="fa-solid fa-lock-open"></i>Open Now
+                        </h2>
+                      </div>
+                      <div className={Style.ProductRatingDetail}>
+                        <h2>{item.rating}</h2>
+                        <div className={Style.RatingDetail}>
+                          <div className={Style.rating}>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                          </div>
+                          <h3>{item.views} Reviews</h3>
                         </div>
-                        <h3>{item.views} Reviews</h3>
                       </div>
                     </div>
                   </div>
@@ -50,7 +58,14 @@ const ProductListingData = ({ itemList }: any) => {
                   </div>
                   <div className={Style.productParagraph}>
                     <p>{item.text}</p>
-                    <a href={item.websiteLink}>Website</a>
+                    <div className={Style.ContactButton}>
+                      <a href={item.websiteLink}>
+                        <i className="fa-solid fa-link"></i>Website
+                      </a>
+                      <a href="https://www.whatsapp.com/">
+                        <i className="fa-brands fa-whatsapp"></i>WhatsApp
+                      </a>
+                    </div>
                   </div>
                   <div className={Style.category}>
                     <h2>{item.categories}</h2>

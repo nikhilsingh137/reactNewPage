@@ -424,7 +424,7 @@ const Footer = () => {
                 <a href="/faq">Faq</a>
               </li>
               <li>
-                <a href="/careers">Careers</a>
+                <a href="/privacy-policy">Privacy Policy</a>
               </li>
               <li>
                 <a href="/terms-and-conditions">Terms and Conditions</a>
@@ -435,19 +435,19 @@ const Footer = () => {
             <h2>Bussiness</h2>
             <ul>
               <li>
-                <a href="#/">Add Your Bussiness</a>
+                <a href="/dashboard/new">Add Your Bussiness</a>
               </li>
               <li>
-                <a href="#/">Advertise with us</a>
+                <a href="/advertise">Advertise with us</a>
               </li>
               <li>
-                <a href="#/">Manufacturers Directory</a>
+                <a href="/free-listing">Free Listing</a>
               </li>
               <li>
-                <a href="#/">Country</a>
+                <a href="/">Find a Business</a>
               </li>
               <li>
-                <a href="#/">Buyer FAQ</a>
+                <a href="/article">Article</a>
               </li>
             </ul>
           </div>
@@ -467,7 +467,7 @@ const Footer = () => {
                 <a href="#/">All India</a>
               </li>
               <li>
-                <a href="#/">Furniture</a>
+                <a href="#/">Careers</a>
               </li>
             </ul>
           </div>

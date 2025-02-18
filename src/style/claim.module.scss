@@ -1,6 +1,7 @@
 .container {
   display: block;
   margin-bottom: 40px;
+  padding-top: 20px;
   .wrapper {
     width: 1300px;
     margin: auto;
@@ -26,9 +27,11 @@
           margin: auto;
           text-align: center;
           h2 {
-            font-size: 40px;
-            color: #111;
-            font-weight: 500;
+            font-size: 28px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
             span {
               font-weight: 700;
               position: relative;
@@ -68,15 +71,20 @@
             height: 50px;
             background: #0678b1;
             margin: 40px auto;
-            font-size: 25px;
+            font-size: 16px;
             color: #fff;
             border: solid 1px #0678b1;
-            border-radius: 4px;
+            border-radius: 10px;
             font-weight: 500;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
+            transition: 0.6s;
+            &:hover {
+              background: #111;
+              border-color: #111;
+            }
           }
         }
       }
@@ -87,6 +95,7 @@
 @media only screen and (max-width: 768px) and (min-width: 360px) {
   .container {
     display: block;
+    padding: 0px 10px;
     .wrapper {
       width: 100%;
       .content {
@@ -106,6 +115,7 @@
 @media only screen and (max-width: 992px) and (min-width: 769px) {
   .container {
     display: block;
+    padding: 0px 10px;
     .wrapper {
       width: 100%;
       .content {
@@ -115,10 +125,6 @@
         .mainbox {
           width: 49%;
           .text {
-            h2 {
-              font-size: 35px;
-              line-height: 48px;
-            }
             p {
               font-size: 16px;
             }
@@ -138,6 +144,7 @@
 @media only screen and (max-width: 1299px) and (min-width: 993px) {
   .container {
     display: block;
+    padding: 0px 10px;
     .wrapper {
       width: 100%;
     }

@@ -1,11 +1,53 @@
 import React, { useState } from "react";
 import Style from "../style/imagebox.module.scss";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ImageBox = () => {
-  const [data, setData] = useState("");
-  const [location, setLocation] = useState("");
-  const handleSubmit = (e: any) => {};
+  const [data, setData] = useState({
+    location: "",
+    businessName: "",
+    serviceType: "",
+  });
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+    });
+
+    AOS.refresh();
+  }, []);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setData({ ...data, [name]: value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+    if (
+      !data.location.trim() ||
+      !data.businessName.trim() ||
+      !data.serviceType.trim()
+    ) {
+      return;
+    }
+    setData({ location: "", businessName: "", serviceType: "" });
+    setIsSubmitted(false);
+  };
+
+  AOS.init({
+    offset: 100,
+    duration: 1200,
+    easing: "ease-in-out",
+    delay: 200,
+  });
   return (
     <div className={Style.Imagebox}>
       <div className={Style.wrapper}>
@@ -20,65 +62,55 @@ const ImageBox = () => {
           </div>
           <div className={Style.text}>
             <div className={Style.content}>
-              <h3> Business Trading Directory</h3>
-              <h2>Find a Business Near You</h2>
-              <div className={Style.seachBox}>
-                <form onSubmit={handleSubmit}>
-                  <div className={Style.box}>
-                    <input
-                      type="text"
-                      placeholder="Search Businesses"
-                      value={data}
-                      onChange={(e: any) => setData(e.target.value)}
-                    />
-                  </div>
-                  <div className={Style.box}>
+              <h3 data-aos="slide-up"> Business Trading Directory</h3>
+              <h2 data-aos="slide-down">Find a Business Near You</h2>
+              <div className={Style.searchBoxContainer} data-aos="zoom-in">
+                <form
+                  className={`${Style.searchBox} ${
+                    isSubmitted &&
+                    (!data.location || !data.businessName || !data.serviceType)
+                      ? Style.errorBorder
+                      : ""
+                  }`}
+                  onSubmit={handleSubmit}
+                >
+                  <div className={Style.inputGroup}>
                     <i className="fa-solid fa-location-dot"></i>
                     <input
                       type="text"
-                      placeholder="Location"
-                      value={location}
-                      onChange={(e: any) => setLocation(e.target.value)}
+                      placeholder="Enter Location"
+                      name="location"
+                      value={data.location}
+                      onChange={handleChange}
                     />
                   </div>
-                  <button>
-                    <i className="fa-solid fa-magnifying-glass"></i>
+
+                  <div className={Style.inputGroup}>
+                    <i className="fa-solid fa-building"></i>
+                    <input
+                      type="text"
+                      placeholder="Business Name"
+                      name="businessName"
+                      value={data.businessName}
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  <div className={Style.inputGroup}>
+                    <i className="fa-solid fa-briefcase"></i>
+                    <input
+                      type="text"
+                      placeholder="Service Type"
+                      name="serviceType"
+                      value={data.serviceType}
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  <button type="submit" className={Style.searchButton}>
+                    <i className="fa-solid fa-magnifying-glass"></i> Search
                   </button>
                 </form>
-              </div>
-              <div className={Style.Category}>
-                <ul>
-                  <li>
-                    <a href="#/">
-                      <i className="fa-solid fa-burger"></i>
-                      <span>Restaurants</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#/">
-                      <i className="fa-solid fa-bed"></i>
-                      <span>Hotels</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#/">
-                      <i className="fa-solid fa-bag-shopping"></i>
-                      <span>Shops</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#/">
-                      <i className="fa-solid fa-dumbbell"></i>
-                      <span>Fitness</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#/">
-                      <i className="fa-solid fa-martini-glass-citrus"></i>
-                      <span>Coctail</span>
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>

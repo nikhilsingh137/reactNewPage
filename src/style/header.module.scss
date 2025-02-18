@@ -1,16 +1,42 @@
 .container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9;
+  max-height: 0px;
+  transition: 0.4s ease-in-out;
   &.proBack {
     background: #fff;
     border-bottom: solid 1px #ddd;
   }
   &.stickyBack {
-    background: #2e3f6e;
+    background: #fff;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    max-height: 100px;
+    .wrapper {
+      .header {
+        .navbar {
+          ul {
+            li {
+              padding: 20px 0px;
+              &:last-child a {
+                color: #fff;
+              }
+              a {
+                color: #111;
+                &:hover {
+                  color: #0678b1;
+                }
+              }
+              &:last-child a {
+                background: #0678b1;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .sidebar {
     position: fixed;
@@ -21,6 +47,7 @@
     box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     transition: 0.4s;
+    z-index: 12;
   }
   .wrapper {
     width: 1300px;
@@ -61,20 +88,25 @@
           gap: 30px;
           align-items: center;
           li {
-            padding: 20px 0px;
             a {
               font-size: 16px;
               color: #fff;
               font-weight: 500;
               text-decoration: none;
+              transition: 0.6s;
               &.proBack {
                 color: #444;
               }
             }
             &:last-child a {
-              background: #ff0000;
+              background: #ff9800;
               padding: 13px 20px;
-              border-radius: 4px;
+              border-radius: 10px;
+              transition: 0.6s;
+              &:hover {
+                background: #fff;
+                color: #000;
+              }
             }
             &:last-child .proBack {
               color: #fff;

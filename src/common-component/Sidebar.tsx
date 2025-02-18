@@ -14,6 +14,9 @@ const Sidebar = () => {
             <a href="/about-us">About us</a>
           </li>
           <li>
+            <a href="/listing">Listing</a>
+          </li>
+          <li>
             <a href="/contact">Contact</a>
           </li>
           <li>

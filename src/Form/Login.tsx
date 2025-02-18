@@ -3,21 +3,25 @@ import Style from "../style/login.module.scss";
 
 const Login = () => {
   const [data, setData] = useState({
-    number: "",
+    email: "",
+    password: "",
   });
-  const [error, setError] = useState("");
+  const [error, setError] = useState({
+    emailError: "",
+    passwordError: "",
+  });
 
   const handleChange = (e: any) => {
-    const newData = { ...data, [e.target.id]: e.target.value };
-    setData(newData);
-    setError((prev: any) => ({
+    const { id, value } = e.target;
+    setData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+
+    setError((prev) => ({
       ...prev,
-      [`${e.target.id}Error`]:
-        e.target.value === ""
-          ? `${
-              e.target.id.charAt(0).toUpperCase() + e.target.id.slice(1)
-            } is Required`
-          : "",
+      [`${id}Error`]:
+        value.trim() === "" ? `Please enter ${id.replace("_", " ")}` : "",
     }));
   };
 
@@ -25,13 +29,18 @@ const Login = () => {
     e.preventDefault();
 
     let isValid = true;
-    let errorMessage = "";
+    let errorMessage = {
+      emailError: "",
+      passwordError: "",
+    };
 
-    if (data.number === "") {
-      errorMessage = "Please Enter Number";
+    if (data.email === "") {
+      errorMessage.emailError = "Please Enter Email";
       isValid = false;
-    } else if (data.number.length !== 10) {
-      errorMessage = "Please Enter 10 digit Number";
+    }
+
+    if (data.password === "") {
+      errorMessage.passwordError = "Please Enter Password";
       isValid = false;
     }
 
@@ -39,6 +48,31 @@ const Login = () => {
       setError(errorMessage);
       return;
     }
+
+    const option: RequestInit = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: data.email,
+        password: data.password,
+      }),
+    };
+
+    fetch("http://127.0.0.1:8000/api/login", option)
+      .then((res) =>
+        res.json().then((value) => ({ status: res.status, value }))
+      )
+      .then(({ status, value }) => {
+        if (status === 200) {
+          alert(value.message);
+          window.location.pathname = "/";
+        } else {
+          alert(value.message);
+          window.location.pathname = "/register";
+        }
+      });
   };
   return (
     <div className={Style.container}>
@@ -53,21 +87,29 @@ const Login = () => {
           <div className={Style.formbox}>
             <form onSubmit={handleSubmit}>
               <div className={Style.box}>
-                <label>Enter Your Phone Number*</label>
+                <label>Email</label>
                 <input
-                  type="number"
-                  placeholder="Enter Number"
-                  value={data.number}
-                  id="number"
+                  type="email"
+                  placeholder="Enter Email"
+                  value={data.email}
+                  id="email"
                   onChange={handleChange}
                 />
-                <span>{error}</span>
+                <span>{error.emailError}</span>
               </div>
-              <button>Continue</button>
+              <div className={Style.box}>
+                <label>Password</label>
+                <input
+                  type="password"
+                  placeholder="Enter Password"
+                  value={data.password}
+                  id="password"
+                  onChange={handleChange}
+                />
+                <span>{error.passwordError}</span>
+              </div>
+              <button>Login</button>
             </form>
-          </div>
-          <div className={Style.detail}>
-            <h2>Login With Email & Password</h2>
           </div>
         </div>
         <div className={Style.bottom}>

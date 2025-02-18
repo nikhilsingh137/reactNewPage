@@ -1,9 +1,9 @@
 import React from "react";
-import AboutBanner from "../component/AboutBanner";
-import AboutDigital from "../component/AboutDigital";
-import AboutMission from "../component/AboutMission";
-import AboutCore from "../component/AboutCore";
-import AboutOnline from "../component/AboutOnline";
+import AboutBanner from "../About/AboutBanner";
+import AboutDigital from "../About/AboutDigital";
+import AboutMission from "../About/AboutMission";
+import AboutCore from "../About/AboutCore";
+import AboutOnline from "../About/AboutOnline";
 
 const AboutPage = () => {
   return (

@@ -8,6 +8,7 @@ import Bussiness from "../component/Bussiness";
 import Content from "../component/Content";
 import AppDetail from "../component/AppDetail";
 import LatestListing from "../component/LatestListing";
+import Article from "../component/Article";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
       <Question />
       <Bussiness />
       <Detail />
+      <Article />
       <AppDetail />
     </>
   );

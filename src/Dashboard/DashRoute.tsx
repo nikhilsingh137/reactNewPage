@@ -125,7 +125,8 @@ const DashRoute = () => {
                       }`}
                     >
                       <NavLink to="/dashboard/password">
-                        <i className="fa-solid fa-chart-line"></i>Password
+                        <i className="fa-solid fa-chart-line"></i>Change
+                        Password
                       </NavLink>
                     </li>
                   </ul>

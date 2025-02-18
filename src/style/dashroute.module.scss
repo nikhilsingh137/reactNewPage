@@ -155,7 +155,7 @@
             .leftTop {
               display: block;
               h2 {
-                font-size: 15px;
+                font-size: 20px;
                 color: #222;
                 margin: 0;
                 padding: 13px 20px;
@@ -168,15 +168,17 @@
                 padding: 0;
                 border-top: solid 1px #ddd;
                 li {
-                  padding: 13px 20px;
+                  padding: 15px 20px;
                   border-bottom: solid 1px #ddd;
+                  cursor: pointer;
                   &.active {
                     background: #fafafa;
+                    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.02);
                   }
                   a {
                     display: flex;
                     align-items: center;
-                    font-size: 14px;
+                    font-size: 16px;
                     color: #444;
                     gap: 8px;
                     text-decoration: none;

@@ -7,14 +7,15 @@ const Register = () => {
     email: "",
     number: "",
     companyName: "",
+    password: "",
   });
   const [error, setError] = useState({
     nameError: "",
     emailError: "",
     numberError: "",
     companyNameError: "",
+    passwordError: "",
   });
-  const [submit, setSubmit] = useState(true);
 
   const handleChange = (e: any) => {
     const { id, value } = e.target;
@@ -22,9 +23,11 @@ const Register = () => {
       ...prevData,
       [id]: value,
     }));
-    setError((prevError: any) => ({
-      ...prevError,
-      [`${id}Error`]: value ? "" : prevError[`${id}Error`],
+
+    setError((prev) => ({
+      ...prev,
+      [`${id}Error`]:
+        value.trim() === "" ? `Please enter ${id.replace("_", " ")}` : "",
     }));
   };
 
@@ -36,6 +39,7 @@ const Register = () => {
       emailError: "",
       numberError: "",
       companyNameError: "",
+      passwordError: "",
     };
 
     let isValid = true;
@@ -61,22 +65,42 @@ const Register = () => {
       isValid = false;
     }
 
-    if (
-      data.name === "" ||
-      data.email === "" ||
-      data.number === "" ||
-      data.companyName === ""
-    ) {
-      setSubmit(true);
-    } else {
-      setSubmit(false);
+    if (data.password === "") {
+      newError.passwordError = "Please Enter Password";
+      isValid = false;
     }
 
     if (!isValid) {
       setError(newError);
       return;
     }
-    console.log("Form submitted successfully!", data);
+
+    const option: RequestInit = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        number: data.number,
+        company_name: data.companyName,
+        password: data.password,
+      }),
+    };
+
+    fetch("http://127.0.0.1:8000/api/register", option)
+      .then((res) => {
+        return res.json();
+      })
+      .then((value) => {
+        if (value.message) {
+          alert(value.message);
+          window.location.pathname = "/login";
+        } else {
+          alert(value.message);
+        }
+      });
   };
   return (
     <div className={Style.Container}>
@@ -105,55 +129,61 @@ const Register = () => {
               in bulk buying and selling on India's premier B2B marketplace.
             </p>
           </div>
-          {submit ? (
-            <div className={Style.box}>
-              <form onSubmit={handleSubmit}>
-                <div className={Style.InputBox}>
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    value={data.name}
-                    id="name"
-                    onChange={handleChange}
-                  />
-                  <span>{error.nameError}</span>
-                </div>
-                <div className={Style.InputBox}>
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    value={data.email}
-                    id="email"
-                    onChange={handleChange}
-                  />
-                  <span>{error.emailError}</span>
-                </div>
-                <div className={Style.InputBox}>
-                  <input
-                    type="number"
-                    placeholder="Mobile Number"
-                    value={data.number}
-                    id="number"
-                    onChange={handleChange}
-                  />
-                  <span>{error.numberError}</span>
-                </div>
-                <div className={Style.InputBox}>
-                  <input
-                    type="text"
-                    placeholder="Company Name"
-                    value={data.companyName}
-                    id="companyName"
-                    onChange={handleChange}
-                  />
-                  <span>{error.companyNameError}</span>
-                </div>
-                <button>Create Account</button>
-              </form>
-            </div>
-          ) : (
-            <p>Sign up successfully</p>
-          )}
+          <div className={Style.box}>
+            <form onSubmit={handleSubmit}>
+              <div className={Style.InputBox}>
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  value={data.name}
+                  id="name"
+                  onChange={handleChange}
+                />
+                <span>{error.nameError}</span>
+              </div>
+              <div className={Style.InputBox}>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  value={data.email}
+                  id="email"
+                  onChange={handleChange}
+                />
+                <span>{error.emailError}</span>
+              </div>
+              <div className={Style.InputBox}>
+                <input
+                  type="number"
+                  placeholder="Mobile Number"
+                  value={data.number}
+                  id="number"
+                  onChange={handleChange}
+                />
+                <span>{error.numberError}</span>
+              </div>
+              <div className={Style.InputBox}>
+                <input
+                  type="text"
+                  placeholder="Company Name"
+                  value={data.companyName}
+                  id="companyName"
+                  onChange={handleChange}
+                />
+                <span>{error.companyNameError}</span>
+              </div>
+              <div className={Style.InputBox}>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  value={data.password}
+                  id="password"
+                  onChange={handleChange}
+                />
+                <span>{error.passwordError}</span>
+              </div>
+              <button>Create Account</button>
+            </form>
+          </div>
           <div className={Style.bottom}>
             Already have an account ? <a href="/login">Sign In</a>
           </div>

@@ -21,11 +21,24 @@
         display: block;
         text-align: center;
         h2 {
-          font-size: 50px;
-          font-weight: 500;
-          line-height: 60px;
+          font-size: 28px;
+          color: #000;
           margin: 0;
           padding: 0;
+          font-weight: 600;
+          span {
+            display: inline-block;
+            position: relative;
+            font-weight: 700;
+            i {
+              position: absolute;
+              bottom: 0;
+              height: 6px;
+              background: #ffd400;
+              width: 100%;
+              left: 0;
+            }
+          }
         }
         p {
           font-size: 17px;
@@ -44,6 +57,13 @@
           padding: 8px 30px;
           margin-top: 15px;
           display: inline-block;
+          border-radius: 10px;
+          transition: 0.6s;
+          border: solid 2px #0678b1;
+          &:hover {
+            background: #fff;
+            color: #0678b1;
+          }
         }
       }
     }
@@ -58,16 +78,13 @@
       width: 100%;
       .divide {
         flex-wrap: wrap;
-        padding: 0px 5px;
+        padding: 0px 10px;
         .image {
           width: 100%;
           margin-bottom: 20px;
         }
         .content {
           width: 100%;
-          h2 {
-            font-size: 45px;
-          }
           p {
             width: 80%;
           }
@@ -83,13 +100,9 @@
     margin-bottom: 50px;
     .wrapper {
       width: 100%;
-      padding: 0px 5px;
+      padding: 0px 10px;
       .divide {
         .content {
-          h2 {
-            font-size: 40px;
-            line-height: 50px;
-          }
           p {
             width: 100%;
             padding: 10px 0px;
@@ -104,6 +117,7 @@
   .container {
     display: block;
     margin-bottom: 50px;
+    padding: 0px 10px;
     .wrapper {
       width: 100%;
     }

@@ -1,25 +1,5 @@
 import React, { useState } from "react";
 import Style from "../style/dashAdditem.module.scss";
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-
-const SetView = ({
-  center,
-  zoom,
-}: {
-  center: [number, number];
-  zoom: number;
-}) => {
-  const map = useMap();
-  map.setView(center, zoom);
-  return null;
-};
-
-const SetScrollWheel = () => {
-  const map = useMap();
-  map.scrollWheelZoom.disable();
-  return null;
-};
 
 const DashAddItem = () => {
   const [latitude, setLatitude] = useState(28.6139);
@@ -91,18 +71,6 @@ const DashAddItem = () => {
                   <span></span>
                 </div>
               </div>
-              <div className={Style.ItemLocationMap}>
-                <MapContainer
-                  style={{ height: "400px", width: "100%", zIndex: "9" }}
-                >
-                  <SetView center={[latitude, longitude]} zoom={10} />
-                  <SetScrollWheel />
-                  <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                  <Marker position={[latitude, longitude]}>
-                    <Popup>📍 My Business Location</Popup>
-                  </Marker>
-                </MapContainer>
-              </div>
               <div className={Style.City}>
                 <label>City / Location</label>
                 <select>
@@ -142,6 +110,16 @@ const DashAddItem = () => {
                   <span></span>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className={Style.ItemDescription}>
+            <div className={Style.DescriptionTitle}>
+              <h2>Details</h2>
+            </div>
+            <div className={Style.DescptionBox}>
+              <label>Text</label>
+              <textarea placeholder="Details"></textarea>
+              <span></span>
             </div>
           </div>
         </form>
