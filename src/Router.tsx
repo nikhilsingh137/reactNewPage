@@ -1,14 +1,20 @@
-import { createHashRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./page/HomePage";
 import AboutPage from "./page/AboutPage";
 import Register from "./Form/Register";
 import Login from "./Form/Login";
 import ProductListing from "./ProductListing/ProductListing";
-import MapLocation from "./component/MapLocation";
+import MapLocation from "./ProductListing/MapLocation";
 import DashRoute from "./Dashboard/DashRoute";
 import Sitemap from "./component/SiteMap";
+import FreeListing from "./component/FreeListing";
+import Advertise from "./component/Advertise";
+import AskQuestion from "./component/AskQuestion";
+import Contact from "./component/Contact";
+import Policy from "./component/Policy";
+import ErrorPage from "./Errorpage/ErrorPage";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: (
@@ -16,6 +22,7 @@ const router = createHashRouter([
         <HomePage />
       </>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: "/about-us",
@@ -46,7 +53,7 @@ const router = createHashRouter([
     element: <ProductListing />,
   },
   {
-    path: "/product",
+    path: "/listing",
     element: <ProductListing />,
   },
   {
@@ -74,10 +81,50 @@ const router = createHashRouter([
     ),
   },
   {
+    path: "/ask",
+    element: (
+      <>
+        <AskQuestion />
+      </>
+    ),
+  },
+  {
     path: "/sitemap",
     element: (
       <>
         <Sitemap />
+      </>
+    ),
+  },
+  {
+    path: "/free-listing",
+    element: (
+      <>
+        <FreeListing />
+      </>
+    ),
+  },
+  {
+    path: "/advertise",
+    element: (
+      <>
+        <Advertise />
+      </>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <>
+        <Contact />
+      </>
+    ),
+  },
+  {
+    path: "/privacy-policy",
+    element: (
+      <>
+        <Policy />
       </>
     ),
   },
