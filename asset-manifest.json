@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/reactNewPage/static/css/main.a9d8a769.css",
-    "main.js": "/reactNewPage/static/js/main.84d5b16f.js",
+    "main.js": "/reactNewPage/static/js/main.43ac79ae.js",
     "static/media/172802-removebg-preview.png": "/reactNewPage/static/media/172802-removebg-preview.ca9898c32ed9c0b945e6.png",
     "index.html": "/reactNewPage/index.html",
     "main.a9d8a769.css.map": "/reactNewPage/static/css/main.a9d8a769.css.map",
-    "main.84d5b16f.js.map": "/reactNewPage/static/js/main.84d5b16f.js.map"
+    "main.43ac79ae.js.map": "/reactNewPage/static/js/main.43ac79ae.js.map"
   },
   "entrypoints": [
     "static/css/main.a9d8a769.css",
-    "static/js/main.84d5b16f.js"
+    "static/js/main.43ac79ae.js"
   ]
 }
