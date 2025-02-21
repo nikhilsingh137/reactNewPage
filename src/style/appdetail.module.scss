@@ -1,0 +1,91 @@
+.container {
+  display: block;
+  padding: 30px 0px;
+  .wrapper {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .Image {
+      width: 48%;
+      height: 400px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .content {
+      width: 48%;
+      h2 {
+        font-size: 28px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+      }
+      ul {
+        display: block;
+        list-style: disc;
+        margin: 20px 0px;
+        padding: 0px 20px;
+        li {
+          font-size: 16px;
+          color: #444;
+          font-weight: 500;
+          line-height: 34px;
+        }
+      }
+      span {
+        font-size: 16px;
+        font-weight: 500;
+        color: #111;
+      }
+      .appImage {
+        display: flex;
+        align-items: center;
+        padding: 25px 0px;
+        gap: 10px;
+        a {
+          display: block;
+          text-decoration: none;
+          width: 200px;
+          height: 50px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .container {
+    padding: 0px 10px;
+    .wrapper {
+      width: 100%;
+      flex-wrap: wrap;
+      .Image {
+        width: 100%;
+      }
+      .content {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1299px) and (min-width: 769px) {
+  .container {
+    padding: 0px 10px;
+    .wrapper {
+      width: 100%;
+      align-items: center;
+    }
+  }
+}

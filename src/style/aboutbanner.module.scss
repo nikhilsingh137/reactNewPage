@@ -1,0 +1,73 @@
+.banner {
+  display: block;
+  margin-bottom: 40px;
+  padding-top: 80px;
+  .wrapper {
+    width: 1300px;
+    margin: auto;
+    .title {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 50px 0px;
+      h2 {
+        font-size: 30px;
+        color: #111;
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+      }
+      p {
+        font-size: 18px;
+        color: #2d3840;
+        font-weight: 500;
+        margin: 0;
+        padding: 10px 0px;
+        b {
+          color: #111;
+        }
+      }
+    }
+  }
+  .Image {
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .banner {
+    .wrapper {
+      width: 100%;
+      .title {
+        padding: 50px 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .banner {
+    .wrapper {
+      width: 100%;
+      .title {
+        padding: 50px 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1299px) and (min-width: 993px) {
+  .banner {
+    .wrapper {
+      width: 100%;
+      .title {
+        padding: 50px 10px;
+      }
+    }
+  }
+}

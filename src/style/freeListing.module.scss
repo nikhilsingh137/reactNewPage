@@ -1,0 +1,1818 @@
+.container {
+  display: block;
+  padding-top: 88px;
+  .wrapper {
+    width: 1300px;
+    margin: auto;
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 0px;
+      a {
+        font-size: 11px;
+        color: #111;
+        text-decoration: none;
+        outline: none;
+        transition: 0.6s;
+        &:hover {
+          color: #0076d7;
+        }
+      }
+      i {
+        font-size: 11px;
+        color: #666;
+      }
+      span {
+        font-size: 11px;
+        color: #757575;
+      }
+    }
+    .ListContent {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      .LeftAside {
+        display: block;
+        h1 {
+          font-size: 45px;
+          margin-top: 30px;
+          color: #111;
+          strong {
+            color: #0076d7;
+          }
+        }
+        span {
+          font-size: 22px;
+          color: #111;
+          font-weight: 500;
+        }
+        form {
+          display: block;
+          width: 100%;
+          .formbox {
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            max-width: 572px;
+            margin: 40px 0 0;
+            height: 72px;
+            border-color: #797979;
+            border: 2px solid #0076d7;
+            position: relative;
+            background-color: #fff;
+            .formCountry {
+              font-size: 18px;
+              padding-left: 20px;
+              display: flex;
+              align-items: center;
+              .countryImage {
+                width: 36px;
+                height: 25px;
+                background-image: url("https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/india_flag.svg");
+                margin-right: 10px;
+                background-size: 100% 100%;
+                background-position: 50%;
+                background-repeat: no-repeat;
+                display: inline-block;
+                cursor: pointer;
+                vertical-align: middle;
+              }
+              .NumberCode {
+                color: #111;
+                font-size: 18px;
+                font-weight: 500;
+              }
+            }
+            .box {
+              display: block;
+              width: 100%;
+              input {
+                width: 100%;
+                font-size: 20px;
+                display: block;
+                width: 100%;
+                border: none;
+                border-radius: 4px;
+                height: 48px;
+                color: #111;
+                padding-left: 12px;
+                outline: none;
+              }
+            }
+            label {
+              position: absolute;
+              transition: all 0.2s ease;
+              color: #667281;
+              pointer-events: none;
+              text-align: left;
+              background-color: #fff;
+              overflow: hidden;
+              padding-left: 5px;
+              background-color: transparent;
+              left: 105px;
+              top: 19px;
+              font-size: 20px;
+              width: auto;
+            }
+            &.active label {
+              top: -12px;
+              left: 10px;
+              font-size: 16px;
+              color: #0076d7;
+              background: #fff;
+              padding: 0 5px;
+            }
+            button {
+              background-color: #0076d7;
+              border-radius: 6px;
+              color: #fff;
+              height: 48px;
+              width: 100%;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 7px;
+              gap: 10px;
+              flex: 0 0 169px;
+              cursor: pointer;
+              border: none;
+              height: 60px;
+              font-size: 20px;
+              overflow: hidden;
+              margin-right: 4px;
+              i {
+                animation: animate 0.4s infinite alternate;
+              }
+            }
+          }
+        }
+        .ListItem {
+          margin-top: 50px;
+          display: block;
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+              color: #3b3b3b;
+              margin-bottom: 20px;
+              display: flex;
+              align-items: center;
+              position: relative;
+              font-size: 19px;
+              font-weight: 500;
+              &::before {
+                content: "";
+                width: 26px;
+                height: 19px;
+                background-image: url("//akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/greencheck.svg");
+                background-repeat: no-repeat;
+                padding-right: 17px;
+                position: relative;
+                left: -5px;
+                background-size: 100% 100%;
+              }
+            }
+          }
+        }
+        .policy {
+          margin-bottom: 30px;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          h2 {
+            font-size: 11px;
+            color: #6f6f6f;
+            margin-top: 25px;
+            font-weight: 400;
+          }
+          a {
+            text-decoration: none;
+            margin-top: 27px;
+            font-weight: 400;
+            font-size: 11px;
+            color: #6f6f6f;
+            border-bottom: 1px solid #dedede;
+            transition: 0.6s;
+            &:hover {
+              color: #0076d7;
+              border-color: #0076d7;
+            }
+          }
+        }
+      }
+      .rightAside {
+        flex: 0 0 640px;
+        position: absolute;
+        right: -23px;
+        bottom: 0;
+        z-index: 1;
+        .fullListItem {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          position: absolute;
+          bottom: 20px;
+          left: -80px;
+          width: 40%;
+          z-index: -1;
+          .rightList {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-top-left-radius: 30px;
+            padding: 9.5px 20px 9.5px 50px;
+            background-color: #b6f6cf;
+            &:nth-child(2) {
+              background: #ffd1ff;
+            }
+            &:nth-child(3) {
+              background: #c1d4ff;
+            }
+            .RightListImage {
+              width: 30px;
+              height: 33px;
+              display: block;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .rightListText {
+              display: block;
+              b {
+                font-size: 20px;
+                display: block;
+              }
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .rightImage {
+          width: 642px;
+          height: 470px;
+          display: block;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+  .successStory {
+    display: block;
+    background: #fffcf4;
+    padding: 40px 0px;
+    .wrapper {
+      width: 1300px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      .story {
+        display: block;
+        width: 30%;
+        span {
+          display: block;
+          width: 140px;
+          height: 123px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        h2 {
+          font-size: 30px;
+          margin-top: 40px;
+          color: #1a1b1d;
+        }
+        h3 {
+          font-size: 25px;
+          color: #1a1b1d;
+          font-weight: 500;
+        }
+        a {
+          max-width: 204px;
+          margin-top: 30px;
+          font-size: 20px;
+          height: 52px;
+          text-decoration: none;
+          background-color: #0076d7;
+          border-radius: 10px;
+          color: #fff;
+          height: 48px;
+          width: 100%;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.6s;
+          border: solid 2px #0076d7;
+          &:hover {
+            background: #fff;
+            color: #0076d7;
+          }
+        }
+      }
+      .StoryListItem {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+
+        .storyList {
+          width: 31%;
+          display: block;
+          position: relative;
+          cursor: pointer;
+          &:hover .VedioIcon::before {
+            left: 45px;
+            width: 100%;
+          }
+          &:nth-child(2) .CompanyText {
+            background: #def7ff;
+          }
+          &:nth-child(3) .CompanyText {
+            background: #eff1fb;
+          }
+
+          span {
+            height: 230px;
+            width: 100%;
+            display: block;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+            }
+          }
+          .VedioIcon {
+            width: 62px;
+            height: 62px;
+            position: absolute;
+            top: 185px;
+            left: 13px;
+            &::before {
+              content: "Play";
+              position: absolute;
+              top: 50%;
+              left: 10px;
+              transform: translateY(-50%);
+              background-color: #fff;
+              border: 1px solid #0076d7;
+              border-radius: 6px;
+              color: #0076d7;
+              font-size: 19px;
+              font-weight: 700;
+              width: 0%;
+              text-align: center;
+              padding: 5px 20px;
+              overflow: hidden;
+              transition: all 0.3s;
+            }
+            &::after {
+              content: "";
+              background-image: url("//akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/vidplayicon.svg");
+              background-size: 100%;
+              width: 62px;
+              height: 62px;
+              display: inline-block;
+              position: relative;
+              z-index: 1;
+              border: 1px solid #fff;
+              border-radius: 50%;
+            }
+          }
+          .CompanyText {
+            display: flex;
+            flex-direction: column;
+            padding: 25px 15px 30px;
+            min-height: calc(100% - 230px);
+            justify-content: space-between;
+            background: #fff3f7;
+            .CompanyDetail {
+              display: block;
+              h2 {
+                font-size: 19px;
+                color: #111;
+              }
+              h3 {
+                font-size: 17px;
+                font-weight: 500;
+                color: #111;
+              }
+              h4 {
+                font-size: 15px;
+                color: #6b6b6b;
+                font-weight: 500;
+              }
+            }
+            .CompanyBottomText {
+              display: block;
+              margin-top: 35px;
+              h2 {
+                font-size: 15px;
+                font-style: italic;
+                color: #111;
+                font-weight: 500;
+              }
+              a {
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                color: #6c6c6c;
+                text-decoration: none;
+                font-weight: 600;
+                transition: 0.6s;
+                &:hover {
+                  color: #0076d7;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .FreeBussinessTips {
+    display: block;
+    margin-top: 45px;
+    .wrapper {
+      width: 1300px;
+      margin: auto;
+      .title {
+        display: block;
+        h2 {
+          margin-bottom: 40px;
+          font-size: 30px;
+          color: #1a1b1d;
+        }
+      }
+      .BussinessStep {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .Step {
+          width: 20%;
+          display: block;
+          position: relative;
+          &::after {
+            content: "";
+            width: 36px;
+            height: 21px;
+            background-image: url("//akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/arrowblue@2x.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: 50%;
+            position: absolute;
+            top: 20%;
+            right: -140px;
+          }
+          &:last-child::after {
+            display: none;
+          }
+          span {
+            display: block;
+            width: 100%;
+            height: 204px;
+            img {
+              object-fit: contain;
+              vertical-align: top;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .firstStepText {
+            display: block;
+            margin-top: 50px;
+            h2 {
+              font-size: 18px;
+              color: #767676;
+              font-weight: 500;
+            }
+            h3 {
+              font-size: 22px;
+              margin-top: 8px;
+              color: #111;
+            }
+            p {
+              font-size: 20px;
+              margin: 15px 0 0;
+              color: #111;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ConnectCustomer {
+    margin-top: 70px;
+    padding-bottom: 45px;
+    display: block;
+    width: 100%;
+    position: relative;
+    .wrapper {
+      margin: 0 auto;
+      max-width: 1300px;
+      .title {
+        display: block;
+        h2 {
+          font-size: 30px;
+          color: #1a1b1d;
+        }
+      }
+      .ConnectionContent {
+        margin-top: 30px;
+        background-color: #fffcfa;
+        border-radius: 37px;
+        padding: 45px 60px 20px;
+        justify-content: space-between;
+        display: flex;
+        .connectionImage {
+          display: block;
+          width: 45%;
+          img {
+            width: 100%;
+          }
+        }
+        .ConnectionText {
+          width: 45%;
+          display: block;
+          h2 {
+            color: #333;
+            font-size: 22px;
+            font-weight: 600;
+          }
+          p {
+            font-size: 20px;
+            margin: 30px 0;
+            color: #111;
+          }
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+              font-size: 20px;
+              color: #111;
+              display: flex;
+              line-height: 25px;
+              margin-bottom: 15px;
+              position: relative;
+              &::before {
+                content: "";
+                width: 16px;
+                height: 12px;
+                background-image: url("//akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/blackcheck.svg");
+                background-position: 50%;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                margin: 5px 10px 0 0;
+                flex: 0 0 16px;
+              }
+            }
+          }
+          b {
+            color: #333;
+            font-size: 22px;
+            font-weight: 600;
+            display: block;
+            margin-top: 30px;
+          }
+          form {
+            display: block;
+            width: 100%;
+            .formbox {
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              max-width: 572px;
+              margin-top: 20px;
+              height: 72px;
+              border-color: #797979;
+              border: 2px solid #0076d7;
+              position: relative;
+              background-color: #fff;
+              .formCountry {
+                font-size: 18px;
+                padding-left: 20px;
+                display: flex;
+                align-items: center;
+                .countryImage {
+                  width: 36px;
+                  height: 25px;
+                  background-image: url("https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/india_flag.svg");
+                  margin-right: 10px;
+                  background-size: 100% 100%;
+                  background-position: 50%;
+                  background-repeat: no-repeat;
+                  display: inline-block;
+                  cursor: pointer;
+                  vertical-align: middle;
+                }
+                .NumberCode {
+                  color: #111;
+                  font-size: 18px;
+                  font-weight: 500;
+                }
+              }
+              .box {
+                display: block;
+                width: 100%;
+                input {
+                  width: 100%;
+                  font-size: 20px;
+                  display: block;
+                  width: 100%;
+                  border: none;
+                  border-radius: 4px;
+                  height: 48px;
+                  color: #111;
+                  padding-left: 12px;
+                  outline: none;
+                }
+              }
+              label {
+                position: absolute;
+                transition: all 0.2s ease;
+                color: #667281;
+                pointer-events: none;
+                text-align: left;
+                background-color: #fff;
+                overflow: hidden;
+                padding-left: 5px;
+                background-color: transparent;
+                left: 105px;
+                top: 19px;
+                font-size: 20px;
+                width: auto;
+              }
+              &.active label {
+                top: -12px;
+                left: 10px;
+                font-size: 16px;
+                color: #0076d7;
+                background: #fff;
+                padding: 0 5px;
+              }
+              button {
+                background-color: #0076d7;
+                border-radius: 6px;
+                color: #fff;
+                height: 48px;
+                width: 100%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 7px;
+                flex: 0 0 169px;
+                border: none;
+                height: 60px;
+                font-size: 20px;
+                overflow: hidden;
+                margin-right: 4px;
+              }
+            }
+          }
+          .policy {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            h2 {
+              font-size: 11px;
+              color: #6f6f6f;
+              margin-top: 25px;
+              font-weight: 400;
+            }
+            a {
+              text-decoration: none;
+              margin-top: 27px;
+              font-weight: 400;
+              font-size: 11px;
+              color: #6f6f6f;
+              border-bottom: 1px solid #dedede;
+              transition: 0.6s;
+              &:hover {
+                color: #0076d7;
+                border-color: #0076d7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .BusssinessAds {
+    display: block;
+    padding-bottom: 45px;
+    .wrapper {
+      width: 1300px;
+      margin: auto;
+      background-color: #fffcfa;
+      border-radius: 37px;
+      padding: 45px 60px 20px;
+      display: flex;
+      justify-content: space-between;
+      .BussinessImage {
+        display: block;
+        width: 45%;
+        img {
+          width: 100%;
+        }
+      }
+      .BusinessesContent {
+        width: 45%;
+        display: block;
+        h2 {
+          color: #333;
+          font-size: 22px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 20px;
+          margin: 30px 0;
+          color: #111;
+        }
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            font-size: 20px;
+            color: #111;
+            display: flex;
+            line-height: 25px;
+            margin-bottom: 15px;
+            position: relative;
+            &::before {
+              content: "";
+              width: 16px;
+              height: 12px;
+              background-image: url("//akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/blackcheck.svg");
+              background-position: 50%;
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              margin: 5px 10px 0 0;
+              flex: 0 0 16px;
+            }
+          }
+        }
+        a {
+          max-width: 260px;
+          font-size: 20px;
+          font-weight: 500;
+          background-color: #0076d7;
+          border-radius: 10px;
+          color: #fff;
+          height: 55px;
+          width: 100%;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          margin-top: 15px;
+          border: solid 2px #0076d7;
+          transition: 0.6s;
+          &:hover {
+            background: none;
+            color: #0076d7;
+          }
+        }
+      }
+    }
+  }
+  .Question {
+    display: block;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    .wrapper {
+      width: 1300px;
+      margin: auto;
+      .title {
+        display: block;
+        margin-bottom: 40px;
+        h2 {
+          font-size: 30px;
+          color: #1a1b1d;
+        }
+      }
+      .QuestionContent {
+        display: block;
+        .OuestionNumber {
+          background-color: #fff;
+          border: 1px solid #0076d7;
+          border-radius: 16px;
+          margin-bottom: 25px;
+          padding: 15px;
+          h2 {
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            &::after {
+              transition: all 0.2s linear;
+              content: "";
+              width: 48px;
+              height: 48px;
+              background-image: url("//akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/dropdown.svg");
+              background-position: 50%;
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              flex: 0 0 48px;
+            }
+            &.accordian::after {
+              transform: rotate(180deg);
+            }
+          }
+          .QuestionText {
+            display: block;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.4s ease-in-out;
+            width: 95%;
+            &.accordian {
+              max-height: 3000px;
+            }
+            p {
+              margin: 10px 0;
+              font-size: 22px;
+              font-weight: 400;
+              color: #333;
+            }
+            ul {
+              list-style: disc;
+              margin: 0;
+              padding: 0px 20px;
+
+              li {
+                font-size: 20px;
+                margin-bottom: 5px;
+                color: #333;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .button {
+        width: 100%;
+        text-align: center;
+        button {
+          min-width: 279px;
+          max-width: 279px;
+          height: 54px;
+          font-size: 20px;
+          border-radius: 10px;
+          background-color: #0076d7;
+          border-radius: 10px;
+          color: #fff;
+          height: 55px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border: solid 2px #0076d7;
+          transition: 0.6s;
+          cursor: pointer;
+          &:hover {
+            color: #0076d7;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+  .BussinessProfile {
+    background-color: #fffcfa;
+    padding-bottom: 48px;
+    width: 100%;
+    position: relative;
+    .wrapper {
+      width: 1300px;
+      margin: auto;
+      .title {
+        display: block;
+        h2 {
+          font-size: 30px;
+          padding: 35px 0px;
+          color: #1a1b1d;
+        }
+      }
+      .ProfileContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ProfileDetail {
+          width: 31%;
+          display: block;
+          background: #fff3f7;
+          border: 1px solid #e4e4e4;
+          border-radius: 10px;
+          &:nth-child(2) {
+            background: #def7ff;
+          }
+          &:nth-child(3) {
+            background: #eff1fb;
+          }
+          span {
+            width: 100%;
+            height: 231px;
+            display: block;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          h2 {
+            padding: 35px 30px 20px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            font-size: 23px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            strong {
+              padding: 40px 0px;
+              display: flex;
+              font-size: 20px;
+              color: #0076d7;
+              font-weight: 400;
+              align-items: center;
+              gap: 20px;
+              i {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .BussinessList {
+    display: block;
+    margin-top: 40px;
+    .wrapper {
+      background-image: linear-gradient(79deg, #eaf7ff 5%, #f6fbff 122%);
+      padding: 40px 50px 40px;
+      margin-top: 40px;
+      border: 1px solid #cad8e1;
+      border-radius: 10px;
+      .title {
+        display: block;
+        h2 {
+          font-size: 24px;
+          font-weight: 600;
+          color: #1a1b1d;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 20px;
+          color: #1a1b1d;
+        }
+      }
+      form {
+        display: block;
+        width: 100%;
+        .formbox {
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          max-width: 572px;
+          margin: 35px 0 0;
+          height: 72px;
+          border-color: #797979;
+          border: 2px solid #0076d7;
+          position: relative;
+          background-color: #fff;
+          .formCountry {
+            font-size: 18px;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            .countryImage {
+              width: 36px;
+              height: 25px;
+              background-image: url("https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/india_flag.svg");
+              margin-right: 10px;
+              background-size: 100% 100%;
+              background-position: 50%;
+              background-repeat: no-repeat;
+              display: inline-block;
+              cursor: pointer;
+              vertical-align: middle;
+            }
+            .NumberCode {
+              color: #111;
+              font-size: 18px;
+              font-weight: 500;
+            }
+          }
+          .box {
+            display: block;
+            width: 100%;
+            input {
+              width: 100%;
+              font-size: 20px;
+              display: block;
+              width: 100%;
+              border: none;
+              border-radius: 4px;
+              height: 48px;
+              color: #111;
+              padding-left: 12px;
+              outline: none;
+            }
+          }
+          label {
+            position: absolute;
+            transition: all 0.2s ease;
+            color: #667281;
+            pointer-events: none;
+            text-align: left;
+            background-color: #fff;
+            overflow: hidden;
+            padding-left: 5px;
+            background-color: transparent;
+            left: 105px;
+            top: 19px;
+            font-size: 20px;
+            width: auto;
+          }
+          &.active label {
+            top: -12px;
+            left: 10px;
+            font-size: 16px;
+            color: #0076d7;
+            background: #fff;
+            padding: 0 5px;
+          }
+          button {
+            background-color: #0076d7;
+            border-radius: 6px;
+            color: #fff;
+            height: 48px;
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+            flex: 0 0 169px;
+            border: none;
+            height: 60px;
+            font-size: 20px;
+            overflow: hidden;
+            margin-right: 4px;
+          }
+        }
+      }
+      .policy {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        h2 {
+          font-size: 11px;
+          color: #6f6f6f;
+          margin-top: 25px;
+          font-weight: 400;
+        }
+        a {
+          text-decoration: none;
+          margin-top: 27px;
+          font-weight: 400;
+          font-size: 11px;
+          color: #6f6f6f;
+          border-bottom: 1px solid #dedede;
+          transition: 0.6s;
+          &:hover {
+            color: #0076d7;
+            border-color: #0076d7;
+          }
+        }
+      }
+    }
+  }
+  .BusinessFullDetail {
+    margin-top: 80px;
+    display: block;
+    .wrapper {
+      width: 1300px;
+      margin: auto;
+      .Detaillisting {
+        display: block;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 12px;
+          color: #111;
+          margin-bottom: 15px;
+          font-weight: 500;
+        }
+        p {
+          line-height: 25px;
+          font-size: 12px;
+          color: #555;
+          font-weight: 400;
+        }
+      }
+      .ListingReason {
+        display: block;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 12px;
+          color: #111;
+          margin-bottom: 15px;
+          font-weight: 500;
+        }
+        ul {
+          list-style: disc;
+          margin: 0;
+          padding: 0px 15px;
+          li {
+            margin-bottom: 16px;
+            font-size: 12px;
+            color: #555;
+            font-weight: 400;
+          }
+        }
+      }
+      .BussinessListingStep {
+        display: block;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 12px;
+          color: #111;
+          margin-bottom: 15px;
+          font-weight: 500;
+        }
+        ul {
+          list-style: disc;
+          margin: 0;
+          padding: 0px 15px;
+          li {
+            margin-bottom: 16px;
+            font-size: 12px;
+            color: #555;
+            font-weight: 400;
+            a {
+              color: #0076d7;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .BusinessProfit {
+        display: block;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 12px;
+          color: #111;
+          margin-bottom: 15px;
+          font-weight: 500;
+        }
+        ul {
+          list-style: disc;
+          margin: 0;
+          padding: 0px 15px;
+          li {
+            margin-bottom: 16px;
+            font-size: 12px;
+            color: #555;
+            font-weight: 400;
+            a {
+              color: #0076d7;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .BussinessTips {
+        display: block;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 12px;
+          color: #111;
+          margin-bottom: 15px;
+          font-weight: 500;
+        }
+        h3 {
+          font-size: 12px;
+          color: #111;
+          margin-bottom: 15px;
+          font-weight: 500;
+        }
+        ul {
+          list-style: disc;
+          margin: 0;
+          padding: 0px 15px;
+          li {
+            margin-bottom: 16px;
+            font-size: 12px;
+            color: #555;
+            font-weight: 400;
+            a {
+              color: #0076d7;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .container {
+    display: block;
+    .wrapper {
+      width: 100%;
+      padding: 0px 10px;
+      .ListContent {
+        flex-wrap: wrap;
+        .LeftAside {
+          width: 100%;
+          h1 {
+            font-size: 25px;
+          }
+          span {
+            font-size: 16px;
+          }
+          form {
+            width: 100%;
+            .formbox {
+              height: 60px;
+              width: 100%;
+              max-width: 100%;
+              .formCountry {
+                padding-left: 10px;
+                .countryImage {
+                  width: 25px;
+                }
+                .NumberCode {
+                  font-size: 15px;
+                }
+              }
+              label {
+                font-size: 15px;
+                left: 74px;
+                top: 16px;
+              }
+              button {
+                height: 45px;
+                font-size: 15px;
+                flex: 0 0 108px;
+              }
+            }
+          }
+          .policy {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+            align-items: baseline;
+            width: 100%;
+            a {
+              margin-top: 0;
+            }
+          }
+        }
+        .rightAside {
+          position: relative;
+          flex-basis: 100%;
+          width: 100%;
+          right: 0;
+          margin-top: 40px;
+          .fullListItem {
+            bottom: 47px;
+            width: 40%;
+            left: 0px;
+            gap: 5px;
+            .rightList {
+              padding: 5px 10px 5px 10px;
+              gap: 8px;
+              .RightListImage {
+                width: 20px;
+                height: 20px;
+              }
+              .rightListText {
+                display: flex;
+                flex-direction: column;
+                b {
+                  font-size: 11px;
+                }
+                span {
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+          .rightImage {
+            height: auto;
+            position: relative;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .successStory {
+      .wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        .story {
+          width: 100%;
+          margin-bottom: 25px;
+        }
+        .StoryListItem {
+          width: 100%;
+          flex-wrap: wrap;
+          .storyList {
+            width: 100%;
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+    .FreeBussinessTips {
+      .wrapper {
+        width: 100%;
+        .BussinessStep {
+          flex-wrap: wrap;
+          .Step {
+            width: 100%;
+            margin-bottom: 25px;
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .ConnectCustomer {
+      .wrapper {
+        width: 100%;
+        .ConnectionContent {
+          flex-wrap: wrap;
+          padding: 20px 10px 10px;
+          padding-bottom: 30px;
+          .connectionImage {
+            width: 100%;
+          }
+          .ConnectionText {
+            width: 100%;
+            margin-top: 20px;
+            form {
+              width: 100%;
+              .formbox {
+                height: 60px;
+                width: 100%;
+                max-width: 100%;
+                .formCountry {
+                  padding-left: 10px;
+                  .countryImage {
+                    width: 25px;
+                  }
+                  .NumberCode {
+                    font-size: 15px;
+                  }
+                }
+                label {
+                  font-size: 15px;
+                  left: 74px;
+                  top: 16px;
+                }
+                button {
+                  height: 45px;
+                  font-size: 15px;
+                  flex: 0 0 108px;
+                }
+              }
+            }
+            .policy {
+              flex-wrap: wrap;
+              margin-bottom: 0;
+              align-items: baseline;
+              width: 100%;
+              a {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .BusssinessAds {
+      padding: 0px 10px;
+      .wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 30px 10px 10px;
+        .BussinessImage {
+          width: 100%;
+        }
+        .BusinessesContent {
+          width: 100%;
+          margin-top: 20px;
+          a {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+    .Question {
+      .wrapper {
+        width: 100%;
+      }
+    }
+    .BussinessProfile {
+      .wrapper {
+        width: 100%;
+        .title {
+          text-align: center;
+          h2 {
+            font-size: 28px;
+          }
+        }
+        .ProfileContent {
+          flex-wrap: wrap;
+          .ProfileDetail {
+            width: 100%;
+            margin-bottom: 30px;
+            h2 {
+              display: flex;
+              -webkit-line-clamp: 0;
+              -webkit-box-orient: none;
+              overflow: visible;
+            }
+          }
+        }
+      }
+    }
+    .BussinessList {
+      padding: 0px 10px;
+      .wrapper {
+        width: 100%;
+        padding: 30px 10px 10px;
+        form {
+          width: 100%;
+          .formbox {
+            height: 60px;
+            width: 100%;
+            max-width: 100%;
+            .formCountry {
+              padding-left: 10px;
+              .countryImage {
+                width: 25px;
+              }
+              .NumberCode {
+                font-size: 15px;
+              }
+            }
+            label {
+              font-size: 15px;
+              left: 74px;
+              top: 16px;
+            }
+            button {
+              height: 45px;
+              font-size: 15px;
+              flex: 0 0 108px;
+            }
+          }
+        }
+        .policy {
+          flex-wrap: wrap;
+          margin-bottom: 0;
+          align-items: baseline;
+          width: 100%;
+          a {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .BusinessFullDetail {
+      .wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1299px) and (min-width: 769px) {
+  .container {
+    display: block;
+    .wrapper {
+      width: 100%;
+      padding: 0px 10px;
+      .ListContent {
+        flex-wrap: wrap;
+        align-items: center;
+        .LeftAside {
+          width: 50%;
+          h1 {
+            font-size: 25px;
+          }
+          span {
+            font-size: 16px;
+          }
+          form {
+            width: 100%;
+            .formbox {
+              height: 60px;
+              width: 100%;
+              max-width: 100%;
+              .formCountry {
+                padding-left: 10px;
+                .countryImage {
+                  width: 25px;
+                }
+                .NumberCode {
+                  font-size: 15px;
+                }
+              }
+              label {
+                font-size: 15px;
+                left: 74px;
+                top: 16px;
+              }
+              button {
+                height: 45px;
+                font-size: 15px;
+                flex: 0 0 108px;
+              }
+            }
+          }
+          .policy {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+            align-items: baseline;
+            width: 100%;
+            a {
+              margin-top: 0;
+            }
+          }
+        }
+        .rightAside {
+          position: absolute;
+          right: 0;
+          .fullListItem {
+            bottom: 47px;
+            width: 40%;
+            left: 0px;
+            gap: 5px;
+            .rightList {
+              padding: 5px 10px 5px 10px;
+              gap: 8px;
+              .RightListImage {
+                width: 20px;
+                height: 20px;
+              }
+              .rightListText {
+                display: flex;
+                flex-direction: column;
+                b {
+                  font-size: 11px;
+                }
+                span {
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+          .rightImage {
+            position: relative;
+            max-width: 642px;
+            width: 410px;
+            height: auto;
+          }
+        }
+      }
+    }
+    .successStory {
+      .wrapper {
+        width: calc(100%);
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 50px;
+        .story {
+          width: 50%;
+        }
+        .StoryListItem {
+          width: 160%;
+          gap: 20px;
+          .storyList {
+            max-width: 350px;
+            min-width: 350px;
+            .CompanyText {
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+    .FreeBussinessTips {
+      .wrapper {
+        width: 100%;
+        .BussinessStep {
+          flex-wrap: wrap;
+          .Step {
+            width: 28%;
+            .firstStepText {
+              margin-top: 20px;
+              text-align: center;
+              h3 {
+                font-size: 18px;
+              }
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .ConnectCustomer {
+      .wrapper {
+        width: 100%;
+        .ConnectionContent {
+          padding: 20px 10px 10px;
+          padding-bottom: 30px;
+          align-items: center;
+
+          .ConnectionText {
+            h2 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 16px;
+              margin: 10px 0px;
+            }
+            ul {
+              li {
+                font-size: 16px;
+              }
+            }
+            b {
+              font-size: 20px;
+              margin-top: 10px;
+            }
+            form {
+              width: 100%;
+              .formbox {
+                height: 60px;
+                width: 100%;
+                max-width: 100%;
+                .formCountry {
+                  padding-left: 10px;
+                  .countryImage {
+                    width: 25px;
+                  }
+                  .NumberCode {
+                    font-size: 15px;
+                  }
+                }
+                label {
+                  font-size: 15px;
+                  left: 74px;
+                  top: 16px;
+                }
+                button {
+                  height: 45px;
+                  font-size: 15px;
+                  flex: 0 0 108px;
+                }
+              }
+            }
+            .policy {
+              flex-wrap: wrap;
+              margin-bottom: 0;
+              align-items: baseline;
+              width: 100%;
+              a {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .BusssinessAds {
+      padding: 0px 10px;
+      .wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 30px 10px 10px;
+        align-items: center;
+        .BusinessesContent {
+          h2 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 16px;
+            margin: 10px 0px;
+          }
+          ul {
+            li {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .Question {
+      .wrapper {
+        width: 100%;
+      }
+    }
+    .BussinessProfile {
+      .wrapper {
+        width: 100%;
+        .title {
+          text-align: center;
+          h2 {
+            font-size: 28px;
+          }
+        }
+        .ProfileContent {
+          flex-wrap: wrap;
+          align-items: flex-start;
+          .ProfileDetail {
+            h2 {
+              display: flex;
+              padding: 10px 10px 10px 10px;
+              -webkit-line-clamp: 0;
+              -webkit-box-orient: none;
+              overflow: visible;
+            }
+          }
+        }
+      }
+    }
+    .BussinessList {
+      padding: 0px 10px;
+      .wrapper {
+        width: 100%;
+        padding: 30px 10px 10px;
+        form {
+          width: 100%;
+          .formbox {
+            height: 60px;
+            width: 100%;
+            max-width: 100%;
+            .formCountry {
+              padding-left: 10px;
+              .countryImage {
+                width: 25px;
+              }
+              .NumberCode {
+                font-size: 15px;
+              }
+            }
+            label {
+              font-size: 15px;
+              left: 74px;
+              top: 16px;
+            }
+            button {
+              height: 45px;
+              font-size: 15px;
+              flex: 0 0 108px;
+            }
+          }
+        }
+        .policy {
+          flex-wrap: wrap;
+          margin-bottom: 0;
+          align-items: baseline;
+          width: 100%;
+          a {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .BusinessFullDetail {
+      .wrapper {
+        width: 100%;
+      }
+    }
+  }
+}

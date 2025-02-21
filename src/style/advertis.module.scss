@@ -1,0 +1,1050 @@
+h1,
+h2,
+h3,
+h4,
+span,
+a,
+p {
+  font-family: Poppins, sans-serif !important;
+}
+
+.topdata {
+  width: 100%;
+  padding-top: 90px;
+  .wrapper {
+    width: 1300px;
+    margin: 0px auto;
+    .homedata {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      a {
+        text-decoration: none;
+        font-size: 11px;
+        color: #111;
+        line-height: 16px;
+      }
+      span {
+        display: block;
+        i {
+          font-size: 11px;
+          color: #757575;
+        }
+      }
+      p {
+        font-size: 11px;
+        color: #757575;
+        line-height: 16px;
+      }
+    }
+    .bannerdata {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .leftdata {
+        width: 42%;
+        .growdata {
+          display: flex;
+          align-items: baseline;
+          gap: 8px;
+          span {
+            font-size: 45px;
+            color: #111;
+            font-weight: bold;
+          }
+        }
+        h1 {
+          font-size: 21px;
+          color: #111;
+          font-weight: 500;
+        }
+        .formmain {
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          max-width: 572px;
+          margin: 40px 0 0;
+          height: 72px;
+          position: relative;
+          border: solid 2px #797979;
+          .formdata {
+            font-size: 18px;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            .flagimg {
+              width: 36px;
+              height: 25px;
+              background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/india_flag.svg);
+              margin-right: 10px;
+            }
+          }
+          input {
+            border: 0;
+            outline: none;
+            padding-left: 5px;
+            width: 100%;
+            font-size: 18px;
+          }
+
+          .buttondata {
+            background-color: #0076d7;
+            color: #fff;
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s ease-in-out;
+            border-radius: 7px;
+            flex: 0 0 186px;
+            height: 60px;
+            font-size: 20px;
+            overflow: hidden;
+            outline: none;
+            border: none;
+            margin: 5px 5px;
+            .arrowdata {
+              width: 28px;
+              height: 28px;
+              background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/whitearrow.svg);
+              margin: 4px 0 0 12px;
+              left: 0;
+              position: relative;
+            }
+          }
+        }
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 30px 0px;
+          li {
+            color: #3b3b3b;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-size: 19px;
+            font-weight: 600;
+            &::before {
+              content: "";
+              width: 26px;
+              height: 19px;
+              background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/greencheck.svg);
+              background-repeat: no-repeat;
+              padding-right: 17px;
+              position: relative;
+              left: -5px;
+              background-size: 100% 100%;
+            }
+          }
+        }
+        .continuingdata {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+          width: 100%;
+          font-size: 11px;
+          color: #6f6f6f;
+          p {
+            font-size: 11px;
+            color: #6f6f6f;
+            margin: 25px 0 20px;
+          }
+          a {
+            text-decoration: none;
+            font-size: 11px;
+            color: #6f6f6f;
+            margin: 25px 0 20px;
+            border-bottom: 1px solid #dedede;
+          }
+        }
+      }
+      .rightdata {
+        width: 55%;
+        position: relative;
+        span {
+          width: 100%;
+          position: relative;
+          img {
+            width: 100%;
+          }
+        }
+        .businessdata {
+          display: block;
+          position: absolute;
+          top: 55px;
+          right: 30px;
+          .croresdata {
+            display: flex;
+            align-items: center;
+            background-color: #ebf3ff;
+            border: solid 1px #6c98da;
+            box-shadow: 0 8px 30px 0 rgba(0, 133, 230, 0.16);
+            gap: 10px;
+            padding: 8px 10px;
+            border-radius: 10px;
+            .icondata {
+              display: block;
+              width: 54px;
+              height: 54px;
+              background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/Money-Ecommerce.svg);
+            }
+            span {
+              display: block;
+              font-weight: 500;
+              line-height: 22px;
+              color: #000;
+              width: 121px;
+              p {
+                font-size: 22px;
+                color: #000;
+                font-weight: 700;
+                padding: 0;
+                margin: 0;
+              }
+            }
+          }
+          .lakhdata {
+            display: flex;
+            align-items: center;
+            background-color: #fffdeb;
+            border: solid 1px #dad057;
+            box-shadow: 0 10px 30px 0 rgba(255, 192, 129, 0.22);
+            gap: 10px;
+            padding: 8px 10px;
+            border-radius: 10px;
+            margin-top: 30px;
+            .lakhicondata {
+              display: block;
+              width: 54px;
+              height: 54px;
+              background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/smiley.svg);
+            }
+            span {
+              display: block;
+              font-weight: 500;
+              line-height: 22px;
+              color: #000;
+              width: 130px;
+              p {
+                font-size: 22px;
+                color: #000;
+                font-weight: 700;
+                padding: 0;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .successdata {
+    width: 100%;
+    background-color: #fffcf4;
+    .success {
+      justify-content: space-between;
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      width: 1300px;
+      margin: auto;
+      padding: 45px 0px;
+      .successstorie {
+        display: block;
+        width: 30%;
+        .successicondata {
+          display: block;
+          width: 140px;
+          height: 123px;
+          background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/quoteleft.svg);
+        }
+        h2 {
+          font-size: 30px;
+          margin-top: 40px;
+          font-weight: 700;
+          color: #1a1b1d;
+          padding: 0px;
+          margin: 0;
+        }
+        .Advertisersdata {
+          display: block;
+          font-size: 25px;
+          color: #1a1b1d;
+          margin-top: 10px;
+        }
+        .buttondatabar {
+          background-color: #0076d7;
+          border-radius: 6px;
+          color: #fff;
+          width: 204px;
+          font-size: 20px;
+          height: 52px;
+          margin-top: 15px;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          outline: none;
+        }
+      }
+      .imgtextdata {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          width: 31%;
+          background-color: #fff3f7;
+          border-radius: 5px;
+          text-decoration: none;
+          .imgbar {
+            width: 100%;
+            position: relative;
+            img {
+              width: 100%;
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+            }
+            .videoicon {
+              display: block;
+              position: absolute;
+              bottom: -23px;
+              left: 10px;
+            }
+          }
+          .textdata {
+            display: flex;
+            flex-direction: column;
+            padding: 25px 15px 30px;
+            height: calc(100vh - 320px);
+            justify-content: space-between;
+            h2 {
+              font-size: 19px;
+              color: #111;
+              margin: 0;
+              padding: 0;
+            }
+            p {
+              padding: 10px 0px;
+              margin: 0;
+              font-size: 17px;
+              color: #111;
+              line-height: 23px;
+            }
+            span {
+              font-size: 15px;
+              color: #6b6b6b;
+              line-height: 20px;
+            }
+            .customerdata {
+              font-size: 15px;
+              margin-top: 35px;
+              font-style: italic;
+              color: #111;
+              padding: 10px 0px;
+            }
+            .visitdata {
+              text-decoration: underline;
+              color: #006ac1;
+              font-size: 15px;
+              display: flex;
+              align-items: center;
+              font-weight: 500;
+              &::after {
+                content: "";
+                width: 16px;
+                height: 11px;
+                background-image: url(//akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/rightbluearrow.svg);
+                margin-left: 5px;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+          &:nth-of-type(2) {
+            background-color: #def7ff;
+          }
+          &:nth-of-type(3) {
+            background-color: #eff1fb;
+          }
+        }
+      }
+    }
+  }
+  .Justdialdata {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 25px 0px;
+    h2 {
+      color: #1a1b1d;
+      font-size: 30px;
+    }
+    .adsdata {
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      padding: 20px 0px;
+      .firstadsdata {
+        width: 31%;
+        text-align: center;
+        img {
+          width: 230px;
+        }
+        p {
+          font-size: 20px;
+          text-align: center;
+          line-height: 28px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+  .Plansdata {
+    display: block;
+    width: 100%;
+    background: #f9fcff;
+    .plans {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 1300px;
+      margin: 0 auto;
+
+      .searchdata {
+        width: 35%;
+        padding: 18px 0px;
+        h2 {
+          color: #111;
+          font-weight: 700;
+          line-height: 26px;
+          font-size: 26px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          color: #1a1b1d;
+          font-style: italic;
+          line-height: 25px;
+          padding: 20px 0px;
+        }
+        .pricingdata {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          border-bottom: 1px solid #e5f2ff;
+          width: 100%;
+          padding: 0px 15px;
+          &:nth-of-type(1) {
+            border-top: solid 1px #e5f2ff;
+          }
+          .imgdata {
+            display: block;
+
+            width: 10%;
+            img {
+              width: 45px;
+            }
+          }
+          .searchdata {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 75%;
+            h4 {
+              padding: 0;
+              margin: 0;
+              font-size: 18px;
+              color: #111;
+              font-weight: 600;
+            }
+            .deletedata {
+              width: 16px;
+              height: 16px;
+              background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/infoblue.svg);
+              position: relative;
+              display: block;
+            }
+          }
+        }
+      }
+      .pricedata {
+        display: flex;
+        width: 62.5%;
+        align-items: center;
+        justify-content: space-between;
+        .firstdata {
+          text-align: center;
+          width: 25%;
+          padding-top: 45px;
+          border-left: 1px solid #e5f2ff;
+          position: relative;
+          background: #ecf7fc;
+          &:nth-of-type(2) {
+            background: none;
+          }
+          &:nth-of-type(3) {
+            background: none;
+          }
+          &:nth-of-type(4) {
+            background: none;
+          }
+
+          &:nth-of-type(2) .standeard h2 {
+            color: #e52b8d;
+          }
+          &:nth-of-type(3) .standeard h2 {
+            color: #4e49e9;
+          }
+          &:nth-of-type(4) .standeard h2 {
+            color: #0397cd;
+          }
+          .standeard {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            border-bottom: solid 1px #e5f2ff;
+            padding: 15px 0px;
+            h2 {
+              font-weight: 700;
+              line-height: 26px;
+              color: #139d71;
+              font-size: 26px;
+              padding: 0;
+              margin: 0;
+            }
+            .rupeydata {
+              display: flex;
+              gap: 2px;
+              align-items: center;
+              justify-content: center;
+              p {
+                color: #1a1b1d;
+                font-size: 15px;
+                padding: 5px 0px;
+                margin: 0;
+                text-decoration: line-through;
+                &:nth-of-type(4) p {
+                  text-decoration: none;
+                }
+              }
+            }
+            .presentagedata {
+              display: block;
+              h3 {
+                color: #bb5008;
+                font-weight: 600;
+                font-size: 15px;
+                padding: 0;
+                margin: 0;
+              }
+            }
+            .numberdata {
+              font-size: 34px;
+              font-weight: 700;
+              color: #1a1b1d;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 5px 0px;
+              .numdata {
+                display: block;
+                margin-top: 5px;
+              }
+              .daydata {
+                font-size: 14px;
+                font-weight: 400;
+                display: block;
+                padding-top: 20px;
+              }
+            }
+          }
+          .numdatabar {
+            position: relative;
+            .onexdata {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              height: 60px;
+              border-bottom: 1px solid #e5f2ff;
+              width: 100%;
+              position: relative;
+              vertical-align: top;
+              &:first-child h2 {
+                font-size: 16px;
+              }
+              h2 {
+                font-size: 22px;
+                color: #1a1b1d;
+                font-weight: 600;
+              }
+              span {
+                cursor: default;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-size: 100% 100%;
+                background-position: 50%;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/greentickicon.svg);
+              }
+              .crossdata {
+                cursor: default;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-size: 100% 100%;
+                background-position: 50%;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/redcrosssicon.svg);
+              }
+              p {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .hashdata {
+      display: block;
+      width: 1200px;
+      margin: auto;
+      padding: 5px 0px;
+      p {
+        color: #1a1b1d;
+        font-style: italic;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .iconhashdata {
+          display: block;
+          width: 8px;
+          height: 8px;
+          background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/hash.svg);
+        }
+        .iconstardata {
+          display: block;
+          width: 8px;
+          height: 8px;
+          background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/star.svg);
+        }
+      }
+    }
+  }
+  .Featuresdata {
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 40px 0px;
+    h2 {
+      font-size: 30px;
+      color: #1a1b1d;
+      font-weight: 600;
+      padding: 0;
+      margin: 0;
+    }
+    .Featuresimgicon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 5px 0px;
+      .Featuresfirstdata {
+        width: 48%;
+        display: flex;
+        gap: 25px;
+        margin-top: 20px;
+        img {
+          object-fit: contain;
+          width: 58px;
+          height: 58px;
+          margin-top: 5px;
+        }
+        .featuresicondata {
+          display: block;
+
+          h2 {
+            font-size: 22px;
+            color: #1a1b1d;
+            font-weight: 500;
+          }
+          p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #1a1b1d;
+            font-weight: 400;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+  .Maximisedata {
+    display: block;
+    width: 100%;
+    background-color: #fffcfa;
+    .Justdialadsdata {
+      width: 1200px;
+      margin: 0 auto;
+      h2 {
+        font-size: 30px;
+        color: #1a1b1d;
+        font-weight: 700;
+        padding-top: 30px;
+        margin: 0;
+      }
+      .mobiledata {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0px;
+        width: 100%;
+        .mobilefirstdata {
+          width: 31%;
+          border: 1px solid #e4e4e4;
+          border-radius: 10px;
+          text-decoration: none;
+          &:hover {
+            box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.16);
+          }
+          .firstimgdata {
+            background-color: #fff3f7;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+            &:nth-child(2) {
+              background-color: #def7ff;
+            }
+            &:nth-of-type(3) {
+              background-color: #eff1fb;
+            }
+          }
+          .mobiletextdata {
+            padding: 35px 30px 45px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            border-top: 1px solid #e4e4e4;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            b {
+              font-size: 23px;
+              margin-bottom: 45px;
+              color: #1a1b1d;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              line-height: 30px;
+            }
+            a {
+              text-decoration: none;
+              font-size: 20px;
+              color: #0076d7;
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              .rightarrow {
+                display: block;
+                width: 22px;
+                height: 16px;
+                background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/rightbluearrow.svg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .gotdata {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    h2 {
+      margin-bottom: 40px;
+      font-size: 30px;
+      color: #1a1b1d;
+    }
+    .accordiandata {
+      display: block;
+      .justdaildatabar {
+        background-color: #fff;
+        border: 1px solid #e9e9e9;
+        border-radius: 16px;
+        margin-bottom: 25px;
+        padding: 30px;
+        transition: all 0.5s linear;
+
+        h2 {
+          padding: 0;
+          margin: 0;
+          font-size: 20px;
+          color: #1a1b1d;
+          cursor: pointer;
+          position: relative;
+          transition: all 0.2s ease;
+          &::after {
+            transition: all 0.2s ease;
+            position: absolute;
+            top: -12px;
+            right: 0px;
+            content: "";
+            width: 48px;
+            height: 48px;
+            background-image: url(https://akam.cdn.jdmagicbox.com/images/icontent/listingbusiness/faq_dropdown.svg);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            flex: 0 0 48px;
+            transform: rotate(0deg);
+          }
+          &.active::after {
+            transform: rotate(180deg);
+          }
+          img {
+            width: 50px;
+          }
+        }
+        .panel {
+          margin: 20px 0 0;
+          width: 95%;
+          font-size: 20px;
+          color: #1a1b1d;
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .topdata {
+    .wrapper {
+      width: 100%;
+      padding: 0px 10px;
+      .bannerdata {
+        flex-wrap: wrap;
+        margin-top: 10px;
+        .leftdata {
+          width: 100%;
+          .growdata {
+            img {
+              max-width: 200px;
+              min-width: 100px;
+            }
+          }
+          ul {
+            padding: 10px 0px;
+            margin-top: 10px;
+          }
+          .continuingdata {
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+            p {
+              margin: 0;
+            }
+            a {
+              margin: 0;
+            }
+          }
+        }
+        .rightdata {
+          width: 100%;
+        }
+      }
+    }
+    .successdata {
+      padding: 0px 10px;
+      .success {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 50px;
+        .successstorie {
+          width: 70%;
+        }
+        .imgtextdata {
+          width: 160%;
+          gap: 20px;
+          a {
+            max-width: 350px;
+            min-width: 350px;
+            .textdata {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .Justdialdata {
+      width: 100%;
+      padding: 0px 10px;
+      .adsdata {
+        flex-wrap: wrap;
+        .firstadsdata {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .Plansdata {
+      padding: 0px 10px;
+      .plans {
+        width: 100%;
+        flex-wrap: wrap;
+        .searchdata {
+          width: 100%;
+        }
+        .pricedata {
+          flex-wrap: wrap;
+          width: 100%;
+          .firstdata {
+            width: 100%;
+          }
+        }
+      }
+      .hashdata {
+        width: 100%;
+        padding: 20px 10px;
+      }
+    }
+    .Featuresdata {
+      width: 100%;
+      padding: 40px 10px;
+      .Featuresimgicon {
+        flex-wrap: wrap;
+        .Featuresfirstdata {
+          width: 100%;
+        }
+      }
+    }
+    .Maximisedata {
+      padding: 0px 10px;
+      .Justdialadsdata {
+        width: 100%;
+        .mobiledata {
+          flex-wrap: wrap;
+
+          a {
+            width: 100% !important;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .gotdata {
+      width: 100%;
+      padding: 0px 10px;
+      .accordiandata {
+        .justdaildatabar {
+          padding: 30px 10px;
+          h2 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1299px) and (min-width: 769px) {
+  .topdata {
+    .wrapper {
+      width: 100%;
+      padding: 0px 10px;
+      .bannerdata {
+        .leftdata {
+          .growdata {
+            img {
+              max-width: 200px;
+              min-width: 100px;
+            }
+          }
+        }
+        .rightdata {
+          width: 100%;
+        }
+      }
+    }
+    .successdata {
+      padding: 0px 10px;
+      .success {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 50px;
+        .successstorie {
+          width: 70%;
+        }
+        .imgtextdata {
+          width: 160%;
+          gap: 20px;
+          a {
+            max-width: 350px;
+            min-width: 350px;
+            .textdata {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .Justdialdata {
+      width: 100%;
+      padding: 0px 10px;
+    }
+    .Plansdata {
+      padding: 0px 10px;
+      .plans {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      .hashdata {
+        width: 100%;
+        padding: 20px 10px;
+      }
+    }
+    .Featuresdata {
+      width: 100%;
+      padding: 40px 10px;
+      .Featuresimgicon {
+        flex-wrap: wrap;
+      }
+    }
+    .Maximisedata {
+      padding: 0px 10px;
+      .Justdialadsdata {
+        width: 100%;
+        .mobiledata {
+          flex-wrap: wrap;
+        }
+      }
+    }
+    .gotdata {
+      width: 100%;
+      padding: 0px 10px;
+      .accordiandata {
+        .justdaildatabar {
+          padding: 30px 10px;
+          h2 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

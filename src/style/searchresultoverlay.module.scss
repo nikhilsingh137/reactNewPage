@@ -1,0 +1,49 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 13;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .container {
+    background: #fff;
+    width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    .content {
+      display: flex;
+      justify-content: space-between;
+      background: #f7f7f7;
+      padding: 16px 16px;
+      border-radius: 8px;
+      align-items: center;
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      h3 {
+        font-size: 25px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+    .paragraph {
+      display: block;
+      padding: 16px 16px;
+      padding-bottom: 25px;
+      p {
+        font-size: 17px;
+        line-height: 28px;
+        color: #444;
+      }
+    }
+  }
+}

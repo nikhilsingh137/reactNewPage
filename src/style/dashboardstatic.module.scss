@@ -1,0 +1,215 @@
+.container {
+  display: block;
+  .title {
+    display: block;
+    h2 {
+      font-size: 20px;
+      color: #566985;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    .data {
+      background: #384f95;
+      box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.05);
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 31%;
+      padding: 20px 20px;
+      border-radius: 8px;
+      h2 {
+        font-size: 35px;
+        color: #fff;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+      }
+      h3 {
+        font-size: 13px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+      }
+    }
+  }
+  .mainbox {
+    background: #fff;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.03);
+    margin-top: 25px;
+    border: solid 1px #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    .divide {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .selectButton {
+        display: flex;
+        align-items: center;
+        background: #e5e7f2;
+        border: 1px solid #ddd;
+        height: 45px;
+        width: 150px;
+        border-radius: 5px;
+        h2 {
+          display: flex;
+          font-size: 13px;
+          justify-content: space-between;
+          width: 100%;
+          color: #444;
+          font-weight: 400;
+          margin: 0;
+          padding: 0px 20px;
+          align-items: center;
+        }
+      }
+      .listingbutton {
+        display: flex;
+        gap: 10px;
+        button {
+          display: flex;
+          align-items: center;
+          background: #e5e7f2;
+          border: 1px solid #ddd;
+          cursor: pointer;
+          height: 45px;
+          width: 150px;
+          border-radius: 5px;
+          color: #444;
+          font-size: 13px;
+          font-weight: 400;
+          margin: 0;
+          padding: 0px;
+          justify-content: center;
+        }
+      }
+    }
+    .chartContainer {
+      display: block;
+      height: 500px;
+      margin-top: 40px;
+    }
+  }
+  .message {
+    display: block;
+    margin-top: 30px;
+    .messageTitle {
+      display: block;
+      width: 100%;
+      h2 {
+        font-size: 20px;
+        color: #566985;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .leftMessage {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.03);
+      padding: 40px 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+      border: solid 1px #ddd;
+      h2 {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        i {
+          background: #5ecfb1;
+          max-height: 40px;
+          min-width: 30px;
+          max-width: 40px;
+          min-height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          font-size: 15px;
+          color: #fff;
+        }
+        span {
+          font-size: 13px;
+          color: #444;
+          font-weight: 400;
+          b {
+            color: #6db6fd;
+            font-weight: 400;
+          }
+        }
+      }
+      h3 {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        font-size: 11px;
+        color: #666;
+        font-weight: 400;
+        span {
+          background: #384f95;
+          color: #fff;
+          max-width: 40px;
+          min-width: 30px;
+          max-height: 40px;
+          min-height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          font-size: 14px;
+          transition: 0.6s;
+          &:hover {
+            background: #6db6fd;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .container {
+    display: block;
+    .content {
+      flex-wrap: wrap;
+      .data {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .mainbox {
+      display: block;
+      .divide {
+        flex-wrap: wrap;
+        .selectButton {
+          width: auto;
+          margin-bottom: 10px;
+        }
+      }
+      .chartContainer {
+        height: auto;
+        canvas {
+          height: auto !important;
+          width: 100% !important;
+        }
+      }
+    }
+    .message {
+      .leftMessage {
+        padding: 40px 10px;
+      }
+    }
+  }
+}

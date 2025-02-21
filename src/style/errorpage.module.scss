@@ -1,0 +1,91 @@
+.container {
+  padding-top: 75px;
+  display: block;
+  .mainbox {
+    background-image: url("https://bipko.info/assets/img/65c200e4ea394.png");
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 250px;
+    .path {
+      width: 1300px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      a {
+        text-decoration: none;
+        color: #111;
+        font-weight: 500;
+        font-size: 16px;
+        transition: 0.6s;
+        &:hover {
+          color: cornflowerblue;
+        }
+      }
+      i {
+        color: #111;
+        font-size: 12px;
+      }
+      span {
+        color: #111;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+  .wrapper {
+    width: 1300px;
+    margin: auto;
+    .content {
+      display: block;
+      margin-top: 40px;
+      margin-bottom: 80px;
+      text-align: center;
+      .Image {
+        display: block;
+        max-width: 500px;
+        min-width: 300px;
+        margin: auto;
+        img {
+          width: 100%;
+        }
+      }
+      .button {
+        display: block;
+        margin-top: 70px;
+        a {
+          text-decoration: none;
+          padding: 12px 40px;
+          background: #0067c4;
+          color: #fff;
+          font-weight: 500;
+          font-size: 16px;
+          border: solid 2px #0067c4;
+          transition: 0.6s;
+          border-radius: 10px;
+          &:hover {
+            background: #fff;
+            color: #0067c4;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1299px) and (min-width: 360px) {
+  .container {
+    display: block;
+    .path {
+      width: 100%;
+      padding: 0px 10px;
+    }
+    .wrapper {
+      width: 100%;
+      padding: 0px 10px;
+    }
+  }
+}

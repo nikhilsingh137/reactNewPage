@@ -1,0 +1,88 @@
+.sitemapdata {
+  display: block;
+  width: 100%;
+  padding-top: 100px;
+  .wrapper {
+    width: 1300px;
+    margin: auto;
+    .headdata {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      a {
+        text-decoration: none;
+        color: #0678b1;
+        font-size: 14px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      span {
+        font-size: 14px;
+        color: #555;
+      }
+      p {
+        font-size: 14px;
+        color: #555;
+      }
+    }
+    .bannerdata {
+      display: block;
+      margin-top: 15px;
+      img {
+        width: 100%;
+      }
+    }
+    .Cities {
+      display: block;
+      padding: 40px 0px;
+      .CityTitle {
+        display: block;
+        text-align: center;
+        h2 {
+          font-size: 30px;
+          color: #0678b1;
+          font-weight: 600;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .divideCity {
+        display: flex;
+        .city {
+          width: 20%;
+          display: block;
+          position: relative;
+          span {
+            display: block;
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            position: relative;
+            &::after {
+              position: absolute;
+              content: "";
+              top: 0;
+              left: 0;
+              right: 0;
+              background: rgba(0, 0, 0, 0.8);
+              width: 100%;
+              height: 100%;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          h2 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

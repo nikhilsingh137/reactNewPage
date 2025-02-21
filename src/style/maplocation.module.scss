@@ -1,0 +1,139 @@
+.container {
+  padding-top: 88px;
+  display: flex;
+  .leftAside {
+    width: 35%;
+    .LeftTop {
+      position: sticky;
+      top: 86px;
+      width: 100%;
+      border-bottom: solid 2px #ddd;
+      padding: 10px 15px;
+      padding-bottom: 15px;
+      z-index: 1;
+      background: #fff;
+      .path {
+        display: block;
+        a {
+          text-decoration: none;
+          font-size: 13px;
+          font-weight: 500;
+          color: #000;
+          display: flex;
+          gap: 2px;
+          align-items: center;
+          transition: 0.6s;
+          i {
+            font-size: 13px;
+            transition: 0.6s;
+          }
+          &:hover i {
+            margin-left: 5px;
+          }
+        }
+      }
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+
+        h2 {
+          font-size: 18px;
+          color: #111;
+          font-weight: 600;
+          margin: 0;
+          padding: 0;
+        }
+        h3 {
+          font-size: 12px;
+          color: #111;
+          font-weight: 400;
+          margin: 0;
+          padding: 0;
+          color: #0678b1;
+          cursor: pointer;
+        }
+      }
+      .button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 8px;
+        .leftButton {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          a {
+            text-decoration: none;
+            font-size: 15px;
+            color: #444;
+            border: solid 1px #bbb;
+            padding: 6px 20px;
+            display: flex;
+            gap: 4px;
+            align-items: center;
+            border-radius: 25px;
+          }
+        }
+        .rightButton {
+          font-size: 14px;
+          display: flex;
+          gap: 4px;
+          span {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+          }
+        }
+      }
+    }
+    .LeftBottom {
+      display: block;
+      padding: 15px 15px;
+      height: 380px;
+      overflow-y: scroll;
+      .listItem {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        background: #f7f7f7;
+        padding: 10px 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        span {
+          display: block;
+          img {
+            width: 100%;
+          }
+        }
+        .listContent {
+          display: block;
+          a {
+            font-size: 17px;
+            line-height: 18px;
+            color: #0678b1;
+            text-decoration: none;
+          }
+          h2 {
+            font-size: 13px;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .RightAside {
+    width: 65%;
+    position: sticky;
+    top: 90px;
+    iframe {
+      width: 100%;
+      height: 520px;
+    }
+  }
+}

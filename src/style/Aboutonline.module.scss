@@ -1,0 +1,93 @@
+.conatiner {
+  display: block;
+  margin-bottom: 60px;
+  .wrapper {
+    width: 1300px;
+    margin: auto;
+    .title {
+      display: block;
+      text-align: center;
+      h2 {
+        font-size: 30px;
+        color: #111;
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+      }
+      i {
+        background: #ff0000;
+        height: 4px;
+        width: 40px;
+        display: block;
+        margin: 4px auto;
+      }
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 0px;
+      .video {
+        display: block;
+        width: 49%;
+        iframe {
+          height: 400px;
+          width: 100%;
+        }
+      }
+    }
+    .mainbox {
+      display: block;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+      margin-top: 20px;
+      padding: 30px 20px;
+      border-radius: 8px;
+      p {
+        font-size: 18px;
+        color: #2d3840;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .conatiner {
+    padding: 0px 10px;
+    .wrapper {
+      width: 100%;
+      .content {
+        width: 100%;
+        flex-wrap: wrap;
+        .video {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .conatiner {
+    padding: 0px 10px;
+    .wrapper {
+      width: 100%;
+      .content {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1299px) and (min-width: 993px) {
+  .conatiner {
+    padding: 0px 10px;
+    .wrapper {
+      width: 100%;
+      .content {
+        width: 100%;
+      }
+    }
+  }
+}

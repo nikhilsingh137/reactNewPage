@@ -1,0 +1,138 @@
+.Content {
+  display: block;
+  padding: 20px 0px;
+  .wrapper {
+    width: 1300px;
+    margin: auto;
+    .Location {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      a {
+        display: block;
+        width: 9%;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 30px;
+        span {
+          display: flex;
+          border: solid 1px #ddd;
+          margin: auto;
+          border-radius: 10px;
+          transition: 0.6s;
+          justify-content: center;
+          height: 90px;
+          align-items: center;
+          width: 90px;
+          &:hover {
+            box-shadow: 0 11px 20px 2px rgba(37, 39, 42, 0.3);
+            backdrop-filter: blur(40px);
+            background: #0056b3;
+            transform: scale(1.05);
+            border: solid 1px #0056b3;
+          }
+          img {
+            width: 40px;
+            height: 40px;
+            transition: 0.6s;
+          }
+        }
+        h2 {
+          font-size: 14px;
+          color: #444;
+          margin: 0;
+          padding: 10px 0px;
+          font-weight: 500;
+        }
+      }
+      .button {
+        display: block;
+        width: 9%;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 50px;
+        span {
+          display: block;
+          border: solid 1px #000;
+          width: 80px;
+          height: 80px;
+          margin: auto;
+          border-radius: 10px;
+          img {
+            width: 100%;
+            height: 100%;
+            padding: 18px;
+          }
+        }
+        h2 {
+          font-size: 14px;
+          color: #444;
+          margin: 0;
+          padding: 10px 0px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .Content {
+    display: block;
+    padding: 20px 0px;
+    .wrapper {
+      width: 100%;
+      padding: 0px 10px;
+      .Location {
+        flex-wrap: wrap;
+        a {
+          width: 26%;
+          margin-bottom: 10px;
+          h2 {
+            font-size: 12px;
+          }
+        }
+        .button {
+          margin-bottom: 20px;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .Content {
+    display: block;
+    padding: 20px 0px;
+    .wrapper {
+      width: 100%;
+      padding: 0px 10px;
+      .Location {
+        flex-wrap: wrap;
+        a {
+          width: 12%;
+          margin-bottom: 10px;
+          h2 {
+            font-size: 12px;
+          }
+        }
+        .button {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1299px) and (min-width: 993px) {
+  .Content {
+    display: block;
+    padding: 20px 10px;
+    .wrapper {
+      width: 100%;
+    }
+  }
+}
